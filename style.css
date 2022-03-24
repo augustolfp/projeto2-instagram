@@ -1,3 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAFAFA;
+}
+
+strong {
+    font-weight: bold;
+}
 .TopBar {
     position: fixed;
     display: flex;
@@ -7,6 +15,8 @@
     left: 0;
     width: 100%;
     height: 54px;
+    border-bottom: solid 1px #DBDBDB;
+    background-color: white;
 }
 
 ion-icon {
@@ -33,10 +43,12 @@ ion-icon {
     width: 215px;
     height: 30px;
     background-color: #FAFAFA;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #DBDBDB;
+    border: solid 1px #DBDBDB;
     border-radius: 5px;
+}
+
+.SearchBar p {
+    color: #979797;
 }
 
 .PainelDeControle {
@@ -50,3 +62,70 @@ ion-icon {
     justify-content: space-between;
     width: 935px;
 }
+
+.PaginaRolante {
+    width: 615px;
+    margin: 60px auto;
+}
+
+.Post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: solid 1px #DBDBDB;
+}
+
+.Post > div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+}
+
+.Post h3, h4 {
+    font-size: 14px;
+}
+
+.PostTopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PostTopBar div {
+    display: flex;
+    align-items: center;
+}
+
+.PostTopBar img {
+    margin-right: 17px;
+    width: 32px;
+}
+
+.PostBottomIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.PostBottomIcons div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    height: 18px;
+}
+
+.PostStats {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.PostStats img {
+    width: 20px;
+    margin-right: 5px;
+}
+
