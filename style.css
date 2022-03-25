@@ -1,10 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FAFAFA;
+    font-size: 14px;
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 500;
 }
 .TopBar {
     position: fixed;
@@ -17,12 +18,59 @@ strong {
     height: 54px;
     border-bottom: solid 1px #DBDBDB;
     background-color: white;
+    z-index: 1;
 }
 
 ion-icon {
     font-size: 24px;
 }
 
+.SideBar {
+    position: fixed;
+    left: 1020px;
+    top: 60px;
+    width: 293px;
+}
+
+.SideBar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SideBar img {
+    margin-right: 10px;
+}
+
+.MyUser {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: fle;
+}
+
+.MyUser img {
+    margin-right: 17px;
+}
+
+.Suggestions {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+}
+.Suggestions > div {
+    display: flex;
+    align-items: center;
+
+}
+
+.Suggestions img {
+    width: 32px;
+}
+.FollowButton {
+    font-weight: 500;
+    color: #129EF2;
+}
 .CaixaIconeNome {
     display: flex;
     align-items: center;
@@ -64,7 +112,7 @@ ion-icon {
 }
 
 .PaginaRolante {
-    width: 615px;
+    width: 935px;
     margin: 60px auto;
 }
 
@@ -74,6 +122,8 @@ ion-icon {
     align-items: center;
     background-color: white;
     border: solid 1px #DBDBDB;
+    margin: 60px 0;
+    width: 614px;
 }
 
 .Post > div {
@@ -82,16 +132,23 @@ ion-icon {
     padding: 12px;
 }
 
-.Post h3, h4 {
-    font-size: 14px;
-}
-
 .PostTopBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+h3 {
+    font-weight: 500;
+}
+
+h4, h5 {
+    font-weight: 300;
+}
+
+h5 {
+    color: #8E8E8E;
+}
 .PostTopBar div {
     display: flex;
     align-items: center;
