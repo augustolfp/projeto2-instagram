@@ -7,6 +7,28 @@ body {
 strong {
     font-weight: 500;
 }
+
+ion-icon {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+h5 {
+    font-weight: 300;
+    color: #8E8E8E;
+}
+
 .TopBar {
     position: fixed;
     display: flex;
@@ -21,62 +43,18 @@ strong {
     z-index: 1;
 }
 
-ion-icon {
-    font-size: 24px;
-}
-
-.SideBar {
-    position: fixed;
-    left: 1020px;
-    top: 60px;
-    width: 293px;
-}
-
-.SideBar > div {
+.TopBar > div {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    width: 935px;
 }
 
-.SideBar img {
-    margin-right: 10px;
-}
-
-.MyUser {
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
-    justify-content: fle;
-}
-
-.MyUser img {
-    margin-right: 17px;
-}
-
-.Suggestions {
-    margin-top: 17px;
-    display: flex;
-    align-items: center;
-}
-.Suggestions > div {
-    display: flex;
-    align-items: center;
-
-}
-
-.Suggestions img {
-    width: 32px;
-}
-.FollowButton {
-    font-weight: 500;
-    color: #129EF2;
-}
-.CaixaIconeNome {
+.PageLogo {
     display: flex;
     align-items: center;
 }
 
-.BarrinhaVertical {
+.PageLogo div {
     width: 1px;
     height: 24px;
     background-color: #DBDBDB;
@@ -99,21 +77,39 @@ ion-icon {
     color: #979797;
 }
 
-.PainelDeControle {
+.ControlPanel {
     display: flex;
     justify-content: space-between;
     width: 150px;
 }
 
-.BotoesTopBar {
+.Content {
     display: flex;
     justify-content: space-between;
     width: 935px;
+    margin: 100px auto;
 }
 
-.PaginaRolante {
-    width: 935px;
-    margin: 60px auto;
+.ScrollingContent {
+    display: flex;
+    flex-direction: column;
+    width: 614px;
+}
+
+.Stories {
+    display: flex;
+    height: 118px;
+    align-items: center;
+    background-color: white;
+    border: solid 1px #DBDBDB;
+    margin-bottom: 24px;
+}
+
+.Stories div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16px;
 }
 
 .Post {
@@ -122,8 +118,7 @@ ion-icon {
     align-items: center;
     background-color: white;
     border: solid 1px #DBDBDB;
-    margin: 60px 0;
-    width: 614px;
+    margin-bottom: 60px;
 }
 
 .Post > div {
@@ -138,17 +133,6 @@ ion-icon {
     align-items: center;
 }
 
-h3 {
-    font-weight: 500;
-}
-
-h4, h5 {
-    font-weight: 300;
-}
-
-h5 {
-    color: #8E8E8E;
-}
 .PostTopBar div {
     display: flex;
     align-items: center;
@@ -185,4 +169,54 @@ h5 {
     width: 20px;
     margin-right: 5px;
 }
+
+.SideBar {
+    position: sticky;
+    top: 120px;
+    width: 293px;
+    height: 500px;
+}
+
+.SideBar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SideBar img {
+    margin-right: 10px;
+}
+
+.MyUser {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: flex-start;
+}
+
+.MyUser img {
+    margin-right: 17px;
+}
+
+.Suggestions {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.Suggestions > div {
+    display: flex;
+    align-items: center;
+
+}
+
+.Suggestions img {
+    width: 32px;
+}
+
+.Suggestions p {
+    font-weight: 500;
+    color: #129EF2;
+}
+
 
