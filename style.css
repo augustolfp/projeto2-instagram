@@ -103,15 +103,32 @@ h5 {
     background-color: white;
     border: solid 1px #DBDBDB;
     margin-bottom: 24px;
+    overflow: hidden;
 }
 
-.Stories div {
+.Stories > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 16px;
+    margin-left: 11px;
 }
 
+.StoryUserThumbnail {
+    position: relative;
+    height: 66px;
+    width: 66px;
+}
+
+.StoryUserThumbnail div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Post {
     display: flex;
     flex-direction: column;
@@ -218,5 +235,4 @@ h5 {
     font-weight: 500;
     color: #129EF2;
 }
-
 
