@@ -8,6 +8,11 @@ strong {
     font-weight: 500;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 ion-icon {
     font-size: 24px;
 }
@@ -32,7 +37,7 @@ h5 {
     color: #8E8E8E;
 }
 
-.TopBar {
+header {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -46,11 +51,11 @@ h5 {
     z-index: 1;
 }
 
-.TopBar .MobileHeader {
+header .MobileHeader {
     display: none;
 }
 
-.TopBar .DesktopHeader {
+header .DesktopHeader {
     display: flex;
     justify-content: space-between;
     width: 935px;
@@ -58,7 +63,7 @@ h5 {
     margin-right: 15px;
 }
 
-.BottomBarMobile {
+.MobileBottomControls {
     display: none;
 }
 
@@ -90,7 +95,7 @@ h5 {
     color: #979797;
 }
 
-.ControlPanel {
+header nav {
     display: flex;
     justify-content: space-between;
     width: 150px;
@@ -99,11 +104,11 @@ h5 {
 .Content {
     display: flex;
     justify-content: space-between;
-    width: 935px;
+    max-width: 935px;
     margin: 88px auto;
 }
 
-.ScrollingContent {
+main {
     display: flex;
     flex-direction: column;
     width: 614px;
@@ -127,11 +132,16 @@ h5 {
     display: none; /* for Chrome, Safari, and Opera */
 }
 
-.Stories > div {
+.Stories a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 11px;
+    margin-left: 14px;
+    color: black;
+}
+
+.StoryUser {
+
 }
 
 .StoryUserThumbnail {
@@ -160,7 +170,7 @@ h5 {
     width: 26px;
 }
 
-.Post {
+article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,13 +179,13 @@ h5 {
     margin-bottom: 60px;
 }
 
-.Post > div {
+article > div {
     box-sizing: border-box;
     width: 100%;
     padding: 12px;
 }
 
-.Post > img {
+article > img {
     width: 100%;
 }
 
@@ -189,9 +199,10 @@ h5 {
     font-size: 17px;
 }
 
-.PostTopBar div {
+.PostTopBar a {
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .PostTopBar img {
@@ -226,20 +237,20 @@ h5 {
     margin-right: 5px;
 }
 
-.SideBar {
+aside {
     position: sticky;
     top: 120px;
     width: 293px;
     height: 500px;
 }
 
-.SideBar > div {
+aside > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.SideBar > p {
+aside footer {
     color: #C7C7C7;
     font-size: 11px;
     margin-top: 25px;
@@ -295,35 +306,28 @@ h5 {
     color: #8E8E8E;
 }
 
-@media (min-width: 614px) and (max-width: 935px) {
-    .SideBar {
+@media (max-width: 935px) {
+    aside {
         display: none;
     }
 
     .Content {
         justify-content: center;
-        width: auto;
+       
     }
 }
 
 @media (max-width: 613px) {
-    .SideBar {
-        display: none;
-    }
-
-    .Post {
+   
+    article {
         width: auto;
     }
 
-    .Content {
-        justify-content: center;
-        width: auto;
-    }
-    .TopBar .DesktopHeader {
+    header .DesktopHeader {
         display: none;
     }
 
-    .TopBar .MobileHeader {
+    header .MobileHeader {
         display: flex;
         justify-content: space-between;    
         width: 100%;
@@ -331,7 +335,7 @@ h5 {
         margin-right: 15px;
     }
 
-    .ScrollingContent {
+    main {
         width: 100%;
     }
 
@@ -348,7 +352,7 @@ h5 {
         margin: 50px auto;
     }
 
-    .BottomBarMobile {
+    .MobileBottomControls {
         display: flex;
         justify-content: space-between;
         height: 54px;
