@@ -72,6 +72,16 @@ header .DesktopHeader {
 
 .MobileBottomControls {
     display: none;
+    height: 54px;
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .PageLogo {
@@ -352,6 +362,7 @@ aside footer {
     .Stories .StoriesRightArrow {
         display: none;
     }
+    
     .Content {
         margin: 50px auto;
     }
@@ -359,16 +370,6 @@ aside footer {
     .MobileBottomControls {
         display: flex;
         justify-content: space-between;
-        height: 54px;
-        position: fixed;
-        box-sizing: border-box;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        align-items: center;
         z-index: 1;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 }
