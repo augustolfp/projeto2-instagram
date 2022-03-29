@@ -23,6 +23,11 @@ ion-icon {
 
 h2 {
     font-size: 12px;
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
 }
 
 h3 {
