@@ -4,17 +4,9 @@ body {
     font-size: 12px;
 }
 
-strong {
-    font-weight: 500;
-}
-
 a {
     text-decoration: none;
     color: black;
-}
-
-a:hover {
-    opacity: 0.6;
 }
 
 ion-icon {
@@ -44,6 +36,10 @@ h5 {
     font-weight: 300;
     font-size: 14px;
     color: #8E8E8E;
+}
+
+a:hover {
+    opacity: 0.6;
 }
 
 header {
@@ -103,17 +99,15 @@ header .DesktopHeader {
 }
 
 .SearchBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 215px;
     height: 30px;
     background-color: #FAFAFA;
     border: solid 1px #DBDBDB;
     border-radius: 5px;
+    text-align: center;
 }
 
-.SearchBar p {
+.SearchBar::placeholder {
     color: #979797;
 }
 
@@ -211,6 +205,9 @@ article video {
     width: 100%;
 }
 
+article span {
+    font-weight: bold;
+}
 .PostTopBar {
     display: flex;
     justify-content: space-between;
